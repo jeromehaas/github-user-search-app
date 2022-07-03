@@ -1,0 +1,17 @@
+.theme-switcher {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__label {
+        color: $blue-80;
+        cursor: pointer;
+    }
+
+    &__icon {
+        color: $blue-80 !important;
+        margin-right: 16px;
+        cursor: pointer;
+    }
+}

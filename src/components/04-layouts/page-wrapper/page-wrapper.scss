@@ -1,0 +1,92 @@
+.page-wrapper {
+    background-color: $white-80;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex;
+    align-items: flex;
+
+    &__inner {
+        width: 100%;
+        max-width: 730px;
+        margin: 0 auto;
+        padding: 32px;
+    }
+
+    &--dark {
+        background-color: $black-100;
+
+        .header {
+
+            
+        }
+
+        .searchbar, .searchbar {
+            background-color: $blue-100;
+            box-shadow: none;
+
+            &__input{
+                color: $white-100;
+
+                &::placeholder {
+                    color: $white-100;
+                }
+            
+            }
+
+        }
+
+        .user-card {
+            background-color: $blue-100;
+            box-shadow: none;
+
+            &__hero, .hero {
+
+                &__name {
+                    color: $white-100;
+                }
+
+                &__date-of-joining {
+                    color: $white-100;
+                }
+
+            }
+
+            &__introduction, .introduction {
+                color: $white-100 !important;
+            }
+
+
+
+            &__stats, .stats {
+                background-color: $black-100;
+
+                &__item, .item {
+
+                    &__label {
+                        color: $white-60;
+                    } 
+                    
+                    &__value {
+                        color: $white-100;
+                    } 
+                }
+
+            }
+
+            &__details, .details {
+                 
+                &__item, .item {
+
+                    &__icon,
+                    &__text { 
+                        color: $white-100;
+                    }
+                }
+            }
+
+        }
+
+
+    }
+}

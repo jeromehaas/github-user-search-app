@@ -1,0 +1,49 @@
+.icon {
+  display: inline-block;
+  font: normal normal normal 1em/1 'Icon';
+  color: inherit;
+  flex-shrink: 0;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon--small {
+  font-size: 16px;
+}
+
+.icon--medium {
+  font-size: 32px;
+}
+
+.icon--big {
+  font-size: 64px;
+}
+
+.icon--location::before {
+  content: "\ea02";
+}
+
+.icon--moon::before {
+  content: "\ea03";
+}
+
+.icon--link::before {
+  content: "\ea04";
+}
+
+.icon--twitter::before {
+  content: "\ea05";
+}
+
+.icon--sun::before {
+  content: "\ea06";
+}
+
+.icon--search::before {
+  content: "\ea07";
+}
+
+.icon--building::before {
+  content: "\ea08";
+}

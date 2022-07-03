@@ -1,0 +1,35 @@
+.details {
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-gap: 16px;
+
+    &__item, .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 16px;
+
+        &__link {
+            text-decoration: none;
+        }
+
+        &__icon {
+        margin-top: 6px;
+            color: $black-60;
+        }
+
+        &__text {
+            color: $black-60;
+            word-break: break-word;
+        }
+
+    }
+
+    @media (max-width: 550px) {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+    }
+
+}

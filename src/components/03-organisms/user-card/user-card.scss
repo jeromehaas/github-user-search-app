@@ -1,0 +1,66 @@
+.user-card {
+    background-color: $white-100;
+    padding: 40px;
+    box-shadow: $shadow;
+    display: grid;
+    grid-template-areas: 
+        "avatar hero"
+        "avatar introduction"
+        "avatar stats"
+        "avatar details";
+    grid-gap: 32px;
+    border-radius: 16px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+
+
+    &__avatar {
+        grid-area: avatar;
+    }
+
+    &__hero {
+        grid-area: hero;
+    }
+
+    &__introduction {
+        color: $blue-80;
+        grid-area: introduction;
+    }
+    &__stats {
+        grid-area: stats;
+    }
+
+    &__details {
+        grid-area: details;
+    }
+
+    @media (max-width: 750px) {
+        grid-template-areas: 
+        "avatar hero"
+        "introduction introduction"
+        "stats stats"
+        "details details";
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 120px auto;
+
+
+    }
+
+    @media (max-width: 500px) {
+        grid-template-areas: 
+        "avatar avatar"
+        "hero hero"
+        "introduction introduction"
+        "stats stats"
+        "details details";
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto auto;
+
+        &__avatar {
+            margin: 0 auto;
+            width: 75%;
+            height: auto;
+        }
+    }
+
+}

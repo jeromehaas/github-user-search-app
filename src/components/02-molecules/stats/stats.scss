@@ -1,0 +1,42 @@
+.stats {
+    padding: 16px 32px;
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    background-color: $white-80;
+    gap: 16px;
+    border-radius: 16px;
+
+    &__item, .item {
+        width: calc(100% / 3);
+
+        &__label {
+            display: block;
+           color: $blue-80; 
+        }
+
+        &__value {
+            display: block;
+        }
+
+    }
+
+    @media (max-width: 500px) {
+        flex-wrap: wrap;
+
+        &__item, .item {
+            width: calc((100% / 2) - 16px) !important;
+        }
+
+    }
+    
+    @media (max-width: 450px) {
+        flex-wrap: wrap;
+
+        &__item, .item {
+            width: 100% !important;
+        }
+
+    }
+
+}

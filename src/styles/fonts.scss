@@ -1,0 +1,31 @@
+@font-face {
+	font-family: 'Space-Mono';
+	src:
+		local('fonts/space-mono'), url('@/assets/fonts/space-mono/space-mono-regular.woff2') format('woff2'),
+		local('fonts/space-mono'), url('@/assets/fonts/space-mono/space-mono-regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: block;
+}
+
+@font-face {
+	font-family: 'Space-Mono';
+	src:
+		local('fonts/space-mono'), url('@/assets/fonts/space-mono/space-mono-bold.woff2') format('woff2'),
+		local('fonts/space-mono'), url('@/assets/fonts/space-mono/space-mono-bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: block;
+}
+
+@font-face {
+	font-family: 'Icon';
+	src:
+		local('fonts/icon'), url('@/assets/fonts/icon/icon.woff2') format('woff2'),
+		local('fonts/icon'), url('@/assets/fonts/icon/icon.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: block;
+}
+
+
